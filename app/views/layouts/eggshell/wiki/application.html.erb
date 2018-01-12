@@ -1,0 +1,15 @@
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag    "eggshell/wiki/application", media: "all" %>
+<% end %>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "eggshell/wiki/application" %>
+<% end %>
+
+<% content_for :main do %>
+  <div id="eggshell-wiki">
+    <%= yield %>
+  </div>
+<% end %>
+
+<%= render template: "/layouts/application" %>
