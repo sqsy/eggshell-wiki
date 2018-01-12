@@ -7,8 +7,8 @@ require "eggshell/wiki/version"
 Gem::Specification.new do |s|
   s.name        = "eggshell-wiki"
   s.version     = Eggshell::Wiki::VERSION
-  s.authors     = ["Griffin Qiu", "Jason Lee"]
-  s.email       = ["griffinqiu@gmail.com", "huacnlee@gmail.com"]
+  s.authors     = ["Kevin Hua"]
+  s.email       = ["huaqingping@gmail.com"]
   s.homepage    = "https://github.com/sqsy/eggshell-wiki"
   s.summary     = Eggshell::Wiki::DESCRIPTION
   s.description = Eggshell::Wiki::DESCRIPTION
