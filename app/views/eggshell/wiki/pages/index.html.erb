@@ -5,11 +5,7 @@
     <%= render 'sidebar' %>
     <% if !turbolinks_app? %>
       <div class="twelve wide column">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <%= sanitize_markdown @page.boty_html %>
-          </div>
-        </div>
+        <%= sanitize_markdown @page.body_html %>
       </div>
     <% end %>
   </div>
