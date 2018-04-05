@@ -2,11 +2,13 @@ module Eggshell::Wiki
   class PagesController < Eggshell::Wiki::ApplicationController
     require_module_enabled! :wiki
     before_action :set_page, only: [:show, :edit, :update, :destroy, :comments]
+    before_action :set_index_page, only: [:index]
 
     etag { Setting.wiki_sidebar_html }
 
     def index
-      fresh_when(Setting.wiki_index_html)
+      # fresh_when(Setting.wiki_index_html)
+      fresh_when(@page.body_html)
     end
 
     def recent
@@ -83,6 +85,11 @@ module Eggshell::Wiki
 
     def set_page
       @page = Page.find_by_slug(params[:id])
+    end
+
+    # Please migrate index page data in advance
+    def set_index_page
+      @page = Page.first
     end
 
     def page_params

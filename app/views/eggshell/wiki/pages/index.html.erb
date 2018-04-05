@@ -7,7 +7,7 @@
       <div class="twelve wide column">
         <div class="panel panel-default">
           <div class="panel-body">
-            <%= raw Setting.wiki_index_html %>
+            <%= sanitize_markdown @page.boty_html %>
           </div>
         </div>
       </div>
