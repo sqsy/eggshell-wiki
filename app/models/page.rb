@@ -55,7 +55,7 @@ class Page < ApplicationRecord
     slug
   end
 
-  # 撤掉到指定版本
+  # 回撤到指定版本
   def revert_version(version)
     page_version = PageVersion.where(page_id: id, version: version).first
     return false if page_version.blank?

@@ -1,7 +1,7 @@
 Eggshell::Wiki
 --------------
 
-Wiki 栏目插件 for [Eggshell](https://geteggshell.com)
+Wiki 栏目插件 for [Eggshell](https://siqikids.com)
 
 简单的实现 /wiki 栏目，并在导航栏显示。
 

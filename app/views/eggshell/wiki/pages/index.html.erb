@@ -1,14 +1,16 @@
 <% title_tag t("menu.wiki") %>
 
-<div class="row">
-  <%= render 'sidebar' %>
-  <% if !turbolinks_app? %>
-    <div class="col-md-9">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <%= raw Setting.wiki_index_html %>
+<div class="ui vertical stripe basic segment">
+  <div class="ui stackable grid container"
+    <%= render 'sidebar' %>
+    <% if !turbolinks_app? %>
+      <div class="twelve wide column">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <%= raw Setting.wiki_index_html %>
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
